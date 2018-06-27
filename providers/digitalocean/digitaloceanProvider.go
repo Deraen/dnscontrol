@@ -67,6 +67,7 @@ var features = providers.DocumentationNotes{
 	providers.DocCreateDomains:       providers.Can(),
 	providers.DocOfficiallySupported: providers.Cannot(),
 	providers.CanUseSRV:              providers.Can(),
+	providers.CanUseCAA:              providers.Can(),
 }
 
 func init() {
@@ -209,6 +210,8 @@ func toRc(dc *models.DomainConfig, r *godo.DomainRecord) *models.RecordConfig {
 		SrvWeight:    uint16(r.Weight),
 		SrvPort:      uint16(r.Port),
 		Original:     r,
+		CaaTag:       r.Tag,
+		CaaFlag:      uint8(r.Flags),
 	}
 	t.SetLabelFromFQDN(name, dc.Name)
 	t.SetTarget(target)
@@ -246,5 +249,7 @@ func toReq(dc *models.DomainConfig, rc *models.RecordConfig) *godo.DomainRecordE
 		Priority: priority,
 		Port:     int(rc.SrvPort),
 		Weight:   int(rc.SrvWeight),
+		Flags:    int(rc.CaaFlag),
+		Tag:      rc.CaaTag,
 	}
 }
