@@ -64,8 +64,10 @@ func NewDo(m map[string]string, metadata json.RawMessage) (providers.DNSServiceP
 }
 
 var features = providers.DocumentationNotes{
+	providers.CanUseAlias:            providers.Cannot(),
 	providers.DocCreateDomains:       providers.Can(),
 	providers.DocOfficiallySupported: providers.Cannot(),
+	providers.CanUsePTR:              providers.Cannot("Digitalocean only supports PTR with Droplets"),
 	providers.CanUseSRV:              providers.Can(),
 	providers.CanUseTXTMulti:         providers.Can(),
 	providers.CanUseCAA:              providers.Can(),
