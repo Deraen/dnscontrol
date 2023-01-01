@@ -13,9 +13,9 @@ require (
 	github.com/TomOnTime/utfutil v0.0.0-20210710122150-437f72b26edf
 	github.com/akamai/AkamaiOPEN-edgegrid-golang v1.1.1
 	github.com/andreyvit/diff v0.0.0-20170406064948-c7f18ee00883
-	github.com/aws/aws-sdk-go-v2 v1.16.5
-	github.com/aws/aws-sdk-go-v2/config v1.15.11
-	github.com/aws/aws-sdk-go-v2/credentials v1.12.6
+	github.com/aws/aws-sdk-go-v2 v1.17.3
+	github.com/aws/aws-sdk-go-v2/config v1.18.7
+	github.com/aws/aws-sdk-go-v2/credentials v1.13.7
 	github.com/aws/aws-sdk-go-v2/service/route53 v1.21.1
 	github.com/aws/aws-sdk-go-v2/service/route53domains v1.12.6
 	github.com/babolivier/go-doh-client v0.0.0-20201028162107-a76cff4cb8b6
@@ -79,14 +79,15 @@ require (
 	github.com/andybalholm/cascadia v1.3.1 // indirect
 	github.com/armon/go-metrics v0.3.9 // indirect
 	github.com/armon/go-radix v1.0.0 // indirect
-	github.com/aws/aws-sdk-go-v2/feature/ec2/imds v1.12.6 // indirect
-	github.com/aws/aws-sdk-go-v2/internal/configsources v1.1.12 // indirect
-	github.com/aws/aws-sdk-go-v2/internal/endpoints/v2 v2.4.6 // indirect
-	github.com/aws/aws-sdk-go-v2/internal/ini v1.3.13 // indirect
-	github.com/aws/aws-sdk-go-v2/service/internal/presigned-url v1.9.6 // indirect
-	github.com/aws/aws-sdk-go-v2/service/sso v1.11.9 // indirect
-	github.com/aws/aws-sdk-go-v2/service/sts v1.16.7 // indirect
-	github.com/aws/smithy-go v1.11.3 // indirect
+	github.com/aws/aws-sdk-go-v2/feature/ec2/imds v1.12.21 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/configsources v1.1.27 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/endpoints/v2 v2.4.21 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/ini v1.3.28 // indirect
+	github.com/aws/aws-sdk-go-v2/service/internal/presigned-url v1.9.21 // indirect
+	github.com/aws/aws-sdk-go-v2/service/sso v1.11.28 // indirect
+	github.com/aws/aws-sdk-go-v2/service/ssooidc v1.13.11 // indirect
+	github.com/aws/aws-sdk-go-v2/service/sts v1.17.7 // indirect
+	github.com/aws/smithy-go v1.13.5 // indirect
 	github.com/boombuler/barcode v1.0.1 // indirect
 	github.com/cenkalti/backoff v2.2.1+incompatible // indirect
 	github.com/cenkalti/backoff/v3 v3.0.0 // indirect
